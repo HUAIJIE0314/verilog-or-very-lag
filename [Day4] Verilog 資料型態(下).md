@@ -154,6 +154,7 @@ end
 ## 參數parameter
 - 是一個宣告了就`無法更動的常數`
 - 常常會用來指定`資料位寬(Width)`或是`狀態機的值`
+
 EX:
 ```
 parameter width = 32;
