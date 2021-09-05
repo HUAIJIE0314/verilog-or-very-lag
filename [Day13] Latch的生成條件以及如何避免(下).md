@@ -10,7 +10,7 @@
 就是最後缺少了else，正是因為沒有寫else，會被系統認定為該值不需要改變，而自動生成latch來幫你儲存
 
 **會生成latch的例子：**
-```
+```verilog
 module latch_test(
   in,
   en, 
@@ -31,7 +31,7 @@ endmodule
 解決方法：
 
 **SOL1：補齊else語句**
-```
+```verilog
 module latch_test(
   in,
   en, 
@@ -50,7 +50,7 @@ end
 endmodule
 ```
 **SOL2：在always內最上方加上初值**
-```
+```verilog
 module latch_test(
   in,
   en, 
@@ -69,7 +69,7 @@ end
 endmodule
 ```
 **但這裡有一點該注意，其實講補齊if-else算是攏統的說法，因為以下這個例子其實也會產生latch，原因就在同一個變數在不同if條件下都要敘述完整，否則還是會生成latch。**
-```
+```verilog
 module latch_test(
   in1,
   in2,
@@ -93,7 +93,7 @@ end
 endmodule
 ```
 **應改成**
-```
+```verilog
 module latch_test(
   in1,
   in2,
@@ -135,7 +135,7 @@ endmodule
 
 **會生成latch的例子：**
 
-```
+```verilog
 module latch_test(
   in1,
   in2,
@@ -158,7 +158,7 @@ end
 endmodule
 ```
 **應改成**
-```
+```verilog
 module latch_test(
   in1,
   in2,
@@ -189,7 +189,7 @@ endmodule
 因為會用到變數的前態而自動生成latch來幫你儲存。
 
 **會生成latch的例子：**
-```
+```verilog
 reg a;
 reg b;
 
@@ -208,7 +208,7 @@ always@(*)begin
 end
 ```
 **當然wire也不例外**
-```
+```verilog
 wire a;
 wire c;
 reg b;
@@ -219,7 +219,7 @@ assign c = (a & b)?(c):(1'b0);
 
 或是，如果輸出沒有非常及時，也可以延後一個clk將值鎖在register內
 EX:
-```
+```verilog
 reg a;
 reg b;
 reg a_temp;
@@ -241,7 +241,7 @@ end
 `等號右邊的所有變數或判斷元素都應蓋列入alway觸發條件中`
 
 **會生成latch的例子：**
-```
+```verilog
 module latch_test(
   in1,
   in2,
@@ -262,7 +262,7 @@ end
 endmodule
 ```
 **應改成**
-```
+```verilog
 module latch_test(
   in1,
   in2,
