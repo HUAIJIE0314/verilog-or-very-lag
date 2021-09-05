@@ -199,7 +199,7 @@ always@(*)begin
 end
 ```
 **以及**
-```
+```verilog
 reg a;
 reg b;
 always@(*)begin
