@@ -14,3 +14,4 @@
 - [[Day10] 模組化及引用模組](https://github.com/HUAIJIE0314/verilog-or-very-lag/blob/main/%5BDay10%5D%20%E6%A8%A1%E7%B5%84%E5%8C%96%E5%8F%8A%E5%BC%95%E7%94%A8%E6%A8%A1%E7%B5%84.md)
 - [[Day11] Function & Task](https://github.com/HUAIJIE0314/verilog-or-very-lag/blob/main/%5BDay11%5D%20Function%20%26%20Task.md)
 - [[Day12] Latch的生成條件以及如何避免(上)](https://github.com/HUAIJIE0314/verilog-or-very-lag/blob/main/%5BDay12%5D%20Latch%E7%9A%84%E7%94%9F%E6%88%90%E6%A2%9D%E4%BB%B6%E4%BB%A5%E5%8F%8A%E5%A6%82%E4%BD%95%E9%81%BF%E5%85%8D(%E4%B8%8A).md)
+- [[Day13] Latch的生成條件以及如何避免(下)](https://github.com/HUAIJIE0314/verilog-or-very-lag/blob/main/%5BDay13%5D%20Latch%E7%9A%84%E7%94%9F%E6%88%90%E6%A2%9D%E4%BB%B6%E4%BB%A5%E5%8F%8A%E5%A6%82%E4%BD%95%E9%81%BF%E5%85%8D(%E4%B8%8B).md)
