@@ -1,5 +1,5 @@
 
-# [Day6] Dataflow Level
+# [Day06] Dataflow Level
 ## 算術運算子
 |  運算子  |   說明    |
 |:---:|:----------:|
