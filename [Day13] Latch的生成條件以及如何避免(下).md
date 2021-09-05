@@ -27,7 +27,9 @@ end
 
 endmodule
 ```
+
 解決方法：
+
 **SOL1：補齊else語句**
 ```
 module latch_test(
