@@ -1,5 +1,5 @@
 
-# [Day9] Blocking & Non-Blocking的差異
+# [Day09] Blocking & Non-Blocking的差異
 ## Blocking vs Non-Blocking
 在寫一般軟體語言時，都與verilog中的blocking語句相同，是一行一行由上至下執行的，但verilog又有一個non-blocking，而non-blocking則是同步執行的，而撰寫時也要把握以下原則，才不會產生誤用的情形。
 - always用clock觸發的區塊要使用nonblocking。
