@@ -9,14 +9,14 @@
 - 數值資料：可用底線 _ 來增加可讀性
 
 EX:
-```
+```verilog
 a = 32'd0;
 b = 6'b000101;
 c = 8'h0A;
 d = 8'b0101_1010;
 ```
 `錯誤用法舉例：`
-```
+```verilog
 a = 32'b0;//打了b就要把所有位打出來
 b = 6'd000101;//數值使用錯誤
 c = 8'h10A;位元長度錯誤
@@ -27,12 +27,12 @@ c = 8'h10A;位元長度錯誤
 ## 向量(陣列)表示法
 
 EX:
-```
+```verilog
 reg [7:0]a;//一個8bit的reg
 reg [3:0]b[31:0];//32個4bit的reg--->又稱記憶體表示法
 ```
 **EX:用向量表示法寫一個有讀寫及致能的簡易memory**
-```
+```verilog
 module memory(
   Enable,
   ReadWrite,
@@ -61,7 +61,7 @@ end
 endmodule
 ```
 **TestBench**
-```
+```verilog
 `timescale 1ns/1ns
 module tb_memory();
 /*----------variables----------*/
@@ -135,7 +135,7 @@ endmodule
 在這裡可以順便提到integer的使用，*integer好比一個32bit的register*，所以不要輕易用它來宣告變數，否則會無形中多使用了很多硬體資源，它通常會被宣告來當for-loop的迴圈變數。
 
 EX:
-```
+```verilog
 reg [3:0]a[31:0];
 
 always@(posedge clk or negedge rst_n)begin
@@ -159,7 +159,7 @@ end
 - 常常會用來指定`資料位寬(Width)`或是`狀態機的值`
 
 EX:
-```
+```verilog
 parameter width = 32;
 reg [width-1:0]a;//一個32bit的reg
 ```
