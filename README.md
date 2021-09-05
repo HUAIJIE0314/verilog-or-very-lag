@@ -11,3 +11,4 @@
 - [[Day07] Behavior Level](https://github.com/HUAIJIE0314/verilog-or-very-lag/blob/main/%5BDay7%5D%20Behavior%20Level.md)
 - [[Day08] for迴圈在硬體的使用及該注意的那些事](https://github.com/HUAIJIE0314/verilog-or-very-lag/blob/main/%5BDay8%5D%20for%E8%BF%B4%E5%9C%88%E5%9C%A8%E7%A1%AC%E9%AB%94%E7%9A%84%E4%BD%BF%E7%94%A8%E5%8F%8A%E8%A9%B2%E6%B3%A8%E6%84%8F%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B.md)
 - [[Day09] Blocking & Non-Blocking的差異](https://github.com/HUAIJIE0314/verilog-or-very-lag/blob/main/%5BDay9%5D%20Blocking%20%26%20Non-Blocking%E7%9A%84%E5%B7%AE%E7%95%B0.md)
+- [[Day10] 模組化及引用模組](https://github.com/HUAIJIE0314/verilog-or-very-lag/blob/main/%5BDay10%5D%20%E6%A8%A1%E7%B5%84%E5%8C%96%E5%8F%8A%E5%BC%95%E7%94%A8%E6%A8%A1%E7%B5%84.md)
