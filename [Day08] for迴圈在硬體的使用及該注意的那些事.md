@@ -10,7 +10,7 @@ Verilog的for迴圈會經常在TestBench上做使用，一方面是TestBench只�
 雖然for迴圈不是那麼理想，但還是有使用的場合，例如`初始化二維陣列`時就需要，因為在verilog中不能直接對整個二維列賦值，此時就需要用index去跑每一個變數。
 
 EX:
-```
+```verilog
 reg [63:0]mem[255:0];
 integer i;
 
