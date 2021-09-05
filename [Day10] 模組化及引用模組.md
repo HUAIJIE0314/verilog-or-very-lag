@@ -25,7 +25,7 @@
 將模組的埠與其他模組連接的方法有兩種，分別是:
 
 1.依照要引用之模組的埠列「**順序**」(**in order**)來連接，也就是如果要引用的模組是：
-```
+```verilog
 module test(
   clkSys, 
   rst_n
@@ -36,7 +36,7 @@ module test(
 endmodule
 ```
 那麼引用時括號內的順序就會對應到該模組括號內的順序，例如：
-```
+```verilog
 reg clk;
 reg reset_n;
 test U0(clk, reset_n);//module instantiation
@@ -44,7 +44,7 @@ test U0(clk, reset_n);//module instantiation
 那麼這個模組的{clk, reset_n}就會接到test模組的{clkSys, rst_n}
 
 2.依「指定名稱」(by name)的方法來連接，會以" .該模組腳位(此模組腳位) "來引用，例如：
-```
+```verilog
 reg clk;
 reg reset_n;
 //module instantiation
