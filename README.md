@@ -8,3 +8,4 @@
 - [[Day4] Verilog 資料型態(下)](https://github.com/HUAIJIE0314/verilog-or-very-lag/blob/main/%5BDay4%5D%20Verilog%20%E8%B3%87%E6%96%99%E5%9E%8B%E6%85%8B(%E4%B8%8B).md)
 - [[Day5] Gate Level](https://github.com/HUAIJIE0314/verilog-or-very-lag/blob/main/%5BDay5%5D%20Gate%20Level.md)
 - [[Day6] Dataflow Level](https://github.com/HUAIJIE0314/verilog-or-very-lag/blob/main/%5BDay6%5D%20Dataflow%20Level.md)
+- [[Day7] Behavior Level](https://github.com/HUAIJIE0314/verilog-or-very-lag/blob/main/%5BDay7%5D%20Behavior%20Level.md)
