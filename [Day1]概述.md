@@ -1,4 +1,4 @@
-# [Day1]概述
+# [Day1] 概述
 ## Verilog是什麼？
 Verilog是一種硬體描述語言(**Hardware Description Language, HDL**)，用於數位電路的系統設計，是一種描述數位電路的語言，設計者設計數位電路時可以透過這種語言來描述自己的電路設計想法，利用EDA Tool來幫你完成電路設計。
 目前HDL分為兩大類，有Verilog及VHDL兩種，在歐洲國家以VHDL較為普遍，而亞洲國家則是以Verilog較為多人使用。
