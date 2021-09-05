@@ -6,3 +6,4 @@
 - [[Day2] Verilog 基本簡介](https://github.com/HUAIJIE0314/verilog-or-very-lag/blob/main/%5BDay2%5D%20Verilog%20%E5%9F%BA%E6%9C%AC%E7%B0%A1%E4%BB%8B.md)
 - [[Day3] Verilog 資料型態(上)](https://github.com/HUAIJIE0314/verilog-or-very-lag/blob/main/%5BDay3%5D%20Verilog%20%E8%B3%87%E6%96%99%E5%9E%8B%E6%85%8B(%E4%B8%8A).md)
 - [[Day4] Verilog 資料型態(下)](https://github.com/HUAIJIE0314/verilog-or-very-lag/blob/main/%5BDay4%5D%20Verilog%20%E8%B3%87%E6%96%99%E5%9E%8B%E6%85%8B(%E4%B8%8B).md)
+- [[Day5] Gate Level](https://github.com/HUAIJIE0314/verilog-or-very-lag/blob/main/%5BDay5%5D%20Gate%20Level.md)
