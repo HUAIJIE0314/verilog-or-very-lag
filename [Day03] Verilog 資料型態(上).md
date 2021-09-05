@@ -16,7 +16,7 @@
 - 將兩個wire連在一起是不允許的
 - 若是型態為wand/wor則例外
 舉個例子：
-```
+```verilog
 module test(
   a, 
   b, 
@@ -47,7 +47,7 @@ endmodule
 - 有記憶性
 - 預設值為x (最好要初始化，通常使用rst或rst_n訊號觸發初始化)
 舉個例子：
-```
+```verilog
 module test(
   clk, 
   rst_n, 
