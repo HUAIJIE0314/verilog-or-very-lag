@@ -1,5 +1,5 @@
 
-# [Day5] Gate Level
+# [Day05] Gate Level
 ## 一些基本邏輯閘
 ![](https://i.imgur.com/OOIKYkm.jpg)
 [圖片出處](https://frankcomputerscience.wordpress.com/chapter-3/)
