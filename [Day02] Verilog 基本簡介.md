@@ -1,7 +1,7 @@
 # [Day02] Verilog 基本簡介
 ## verilog電路基本架構
 舉個簡單電路的例子：
-```
+```verilog
 module adder(
   a, 
   b, 
