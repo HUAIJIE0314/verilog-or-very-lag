@@ -18,7 +18,7 @@
 
 EX:
 `輸入數字計算需要的位寬大小`
-```
+```verilog
 function integer log2;
   input integer in ;
   for(log2=0; in>1; log2=log2+1) begin
@@ -27,7 +27,7 @@ function integer log2;
 endfunction
 ```
 引用 log2：
-```
+```verilog
 parameter width = 16;
 reg [log2(width)]:0]a;//5 bit register a
 ```
@@ -42,7 +42,7 @@ reg [log2(width)]:0]a;//5 bit register a
 
 EX:
 `七段顯示解碼(共陰)`
-```
+```verilog
 task give_seg;
   input reg [13:0]in;
   output reg [7:0]out;
