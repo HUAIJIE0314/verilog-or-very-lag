@@ -2,6 +2,7 @@
 ## Verilog 寫不好就 very lag
 本篇將教學：
 verilog基本觀念
+
 模組化及輸入輸出
 Gate-Level Modeling
 Dataflow Modeling
