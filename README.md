@@ -15,3 +15,4 @@
 - [[Day11] Function & Task](https://github.com/HUAIJIE0314/verilog-or-very-lag/blob/main/%5BDay11%5D%20Function%20%26%20Task.md)
 - [[Day12] Latch的生成條件以及如何避免(上)](https://github.com/HUAIJIE0314/verilog-or-very-lag/blob/main/%5BDay12%5D%20Latch%E7%9A%84%E7%94%9F%E6%88%90%E6%A2%9D%E4%BB%B6%E4%BB%A5%E5%8F%8A%E5%A6%82%E4%BD%95%E9%81%BF%E5%85%8D(%E4%B8%8A).md)
 - [[Day13] Latch的生成條件以及如何避免(下)](https://github.com/HUAIJIE0314/verilog-or-very-lag/blob/main/%5BDay13%5D%20Latch%E7%9A%84%E7%94%9F%E6%88%90%E6%A2%9D%E4%BB%B6%E4%BB%A5%E5%8F%8A%E5%A6%82%E4%BD%95%E9%81%BF%E5%85%8D(%E4%B8%8B).md)
+- [[Day14] verilog中的可綜合語句](https://github.com/HUAIJIE0314/verilog-or-very-lag/blob/main/%5BDay14%5D%20verilog%E4%B8%AD%E7%9A%84%E5%8F%AF%E7%B6%9C%E5%90%88%E8%AA%9E%E5%8F%A5.md)
