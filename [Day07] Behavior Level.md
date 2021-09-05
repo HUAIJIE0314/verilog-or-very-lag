@@ -9,7 +9,7 @@
 - 若想隨時執行這個block寫成 always @(*)
 
 EX:
-```
+```verilog
 always@(posedge clkSys or negedge rst_n)begin
   if(!rst_n)begin
     .....
@@ -26,7 +26,7 @@ end
 這裡的if-else跟C語言是相同的用法，不過值得一提的是，`在寫verilog時else最好要寫，避免電路的描述不完整，容易產生latch。`
 
 EX:
-```
+```verilog
 if(...)begin
   if()begin
     ....
@@ -53,7 +53,7 @@ end
 - 除外的狀況寫在default內。
 
 EX:
-```
+```verilog
 case(...)
   item_1:begin
     ....
