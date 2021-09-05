@@ -16,6 +16,7 @@
 EX:
 
 **半加器：**
+
 ![](https://i.imgur.com/yqIuFAt.png)
 
 
@@ -38,6 +39,7 @@ xor xor1(sum, a, b);//XOR gate sum = a xor b
 endmodule
 ```
 **全加器：**
+
 ![](https://i.imgur.com/VScAo8t.png)
 
 
@@ -66,6 +68,7 @@ or(c_out, cl, c2);//OR gate c_out = cl | c2
 endmodule
 ```
 **四位元加法器：**
+
 ![](https://i.imgur.com/z0oEZEM.png)
 ```
 module Full_adder_FourBits(
