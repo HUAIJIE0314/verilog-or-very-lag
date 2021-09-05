@@ -9,7 +9,7 @@
 
 ### 來看下面這個例子
 `non-blocking:`
-```
+```verilog
 module blockingVSnonblocking(
   clkSys, 
   rst_n
@@ -35,7 +35,7 @@ endmodule
 
 ```
 `testbench:`
-```
+```verilog
 `timescale 10ns/1ns
 module tb();
 reg clkSys;
@@ -67,7 +67,7 @@ endmodule
 ---
 
 `blocking:`
-```
+```verilog
 module blockingVSnonblocking(
   clkSys, 
   rst_n
