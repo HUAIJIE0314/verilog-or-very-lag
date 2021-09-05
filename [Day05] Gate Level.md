@@ -7,7 +7,7 @@
 ---
 
 ## 語法
-```
+```verilog
 <邏輯閘種類> <邏輯閘命名> (output, in1, in2);
 ```
 - 邏輯閘種類：AND、OR、NOT....。
@@ -20,7 +20,7 @@ EX:
 ![](https://i.imgur.com/yqIuFAt.png)
 
 
-```
+```verilog
 //Half adder
 module Half_adder(
   a, 
@@ -44,7 +44,7 @@ endmodule
 
 
 
-```
+```verilog
 //Full_adder
 module Full_adder(
   x, 
@@ -70,7 +70,7 @@ endmodule
 **四位元加法器：**
 
 ![](https://i.imgur.com/z0oEZEM.png)
-```
+```verilog
 module Full_adder_FourBits(
   a_in, 
   b_in, 
