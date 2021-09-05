@@ -1,5 +1,5 @@
 
-# [Day7] Behavior Level
+# [Day07] Behavior Level
 ## always block
 - always若超過一行要用begin、end包起來。
 - always內的變數若要賦值(等號左邊的變數)必須是reg型態，而等號右邊可以是wire或reg。
