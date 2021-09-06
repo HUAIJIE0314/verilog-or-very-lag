@@ -49,7 +49,7 @@ localparam STOP  = 4'b1000;
 
 **下面來看一個簡單狀態機的範例~**
 
-```verilog=
+```verilog
 module testFSM(
   clkSys, 
   rst_n,
