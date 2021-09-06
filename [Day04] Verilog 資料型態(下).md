@@ -132,7 +132,7 @@ endmodule
 
 ---
 
-在這裡可以順便提到integer的使用，*integer好比一個32bit的register*，所以不要輕易用它來宣告變數，否則會無形中多使用了很多硬體資源，它通常會被宣告來當for-loop的迴圈變數。
+在這裡可以順便提到integer的使用，*integer好比一個32bit的register(但integer視為有符號數)*，所以不要輕易用它來宣告變數，否則會無形中多使用了很多硬體資源，它通常會被宣告來當for-loop的迴圈變數。
 
 EX:
 ```verilog
