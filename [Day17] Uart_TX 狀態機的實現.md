@@ -1,4 +1,4 @@
-# [Day17] Uart_Tx 狀態機的實現
+# [Day17] Uart_TX 狀態機的實現
 ## Uart是什麼？
 
 UART(Universal Asynchronous Receiver/Transmitter)，是一種非同步的傳輸協定，非同步傳輸的意思是，不管是接收端還是傳送端都有自己傳輸資料的速度(鮑率(Baud Rate))，傳輸時兩邊必須以同樣的包率來收發資料才不會出錯。
