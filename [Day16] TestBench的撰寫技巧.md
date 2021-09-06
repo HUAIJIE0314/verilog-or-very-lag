@@ -75,7 +75,7 @@ initial begin
 end
 always #10 clk_50M = ~clk_50M;
 ```
-現在時間單位設為1ns所以#1就會delay1ns，#10則是delay10個ns，所以delay10個ns則clk_50M會反向一次，所以反向兩次可以得到1周期的clk，所以一個clk總共delay (1ns)x(delay 10次)x(反向2次) = 20ns，得到此頻率為50MHZ。
+現在時間單位設為1ns那麼#1就會delay1ns，#10則是delay10個ns，所以delay10個ns則clk_50M會反向一次，所以反向兩次可以得到1周期的clk，所以一個clk總共delay (1ns)x(delay 10次)x(反向2次) = 20ns，得到此頻率為50MHZ。
 
 ---
 
