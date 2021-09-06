@@ -1,4 +1,3 @@
-
 # [Day15] 狀態機的撰寫
 
 ## 什麼是狀態機呢？
@@ -48,10 +47,119 @@ localparam STOP  = 4'b1000;
 缺點：
 - 跑狀態的register需要花費較多的bit數，若n個狀態則要n個bit的register。
 
-**下面來實際看一下二進制編碼與one-hot合成出電路的差異~**
-`binary`
+**下面來看一個簡單狀態機的範例~**
+
+```verilog=
+module testFSM(
+  clkSys, 
+  rst_n,
+  en,
+  out
+);
+/*--------localparam--------*/
+localparam one   = 2'd0;
+localparam two   = 2'd1;
+localparam three = 2'd2;
+localparam four  = 2'd3;
+/*--------ports declarations--------*/
+input       clkSys;
+input       rst_n;
+input       en;
+output [2:0]out;
+reg    [2:0]out;
+/*--------variables--------*/
+reg    [1:0]fstate;
+/*--------state--------*/
+always@(posedge clkSys or negedge rst_n)begin
+  if(!rst_n)fstate <= one;
+  else begin
+    case(fstate)
+      one:begin
+        if(en)fstate <= two;
+        else  fstate <= one;
+      end
+      two:begin
+        if(en)fstate <= three;
+        else  fstate <= two;
+      end
+      three:begin
+        if(en)fstate <= four;
+        else  fstate <= three;
+      end
+      four:begin
+        if(en)fstate <= one;
+        else  fstate <= four;
+      end
+      default:fstate <= one;
+    endcase
+  end
+end
+/*--------output--------*/
+always@(posedge clkSys or negedge rst_n)begin
+  if(!rst_n)out <= 3'd0;
+  else begin
+    case(fstate)
+        one:    out <= 3'd1;
+        two:    out <= 3'd2;
+        three:  out <= 3'd3;
+        four:   out <= 3'd4;
+        default:out <= 3'd0;
+    endcase
+  end
+end
+endmodule
+
+```
+
+**TestBench**
+```verilog
+
+`timescale 10ns/1ns
+module tb_testFSM();
+reg       clkSys;
+reg       rst_n;
+reg       en;
+wire [2:0]out;
+testFSM UUT(
+  .clkSys(clkSys), 
+  .rst_n(rst_n),
+  .en(en),
+  .out(out)
+);
+
+initial begin
+  clkSys = 0;
+  rst_n = 0;
+  en = 0;
+  repeat(2)@(posedge clkSys)rst_n = 0;
+  rst_n = 1;
+  en = 1;
+  #20  en = 0;
+  #40;
+  en = 1;
+  #20  en = 0;
+  #40;
+  en = 1;
+  #20  en = 0;
+  #40;
+  en = 1;
+  #20  en = 0;
+  #100 $stop;
+end
+
+always #10 clkSys = ~clkSys;
+
+endmodule
+
+```
+
+**Wave**
+
+![](https://i.imgur.com/yggFHbt.png)
+
+**state machine**
+
+![](https://i.imgur.com/TO4UA5r.png)
 
 
-`one-hot`
-![](https://i.imgur.com/8oVoHQx.png)
-
+> 上面的例子，狀態是以二進制編碼來表示的，我自己的狀態機是以兩段式為主，並且輸出邏輯為了timing更好，在output logic會再多敲一級clk(循序邏輯)，可以看到一個always處理狀態的轉移，而另一個always負責在該狀態輸出對應的信號，在這個例子中，在每一個狀態內都要在clk為正緣時並且讀到en為"1"時才會進入下一個狀態，否則留在原狀態等待en的來臨。
