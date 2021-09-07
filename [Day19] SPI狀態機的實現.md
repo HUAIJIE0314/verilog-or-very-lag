@@ -5,6 +5,8 @@ SPI(Serial Peripheral Interface)，是一種同步的傳輸協定，主要應用
 
 ![](https://i.imgur.com/vjiueVR.png)
 
+[圖片出處](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface)
+
 ---
 
 ## 介面
