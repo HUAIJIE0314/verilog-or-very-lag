@@ -29,10 +29,12 @@ I2C，又稱I²C（Inter-Interated Circuit)，在I2C的通訊協定中，收發�
   - SDA由 "0" 變 "1" ---> STOP
 
 **Acknowledge**
+
 當每8 bit資料傳輸完後，會跟隨著1 bit的ACK，這是在確保兩端的接收狀況是否正常。
 - 如果是master傳資料給slave：此時ACK會來自slave端，以此告訴master端它有收到資料(通常用於對slave下instructions)。
 - 如果是master想要向slave端索取資料時，舉個例子，例如讀取記憶體資料：master會先slave傳送想讀取的記憶體"位址"，接著slave端會先ack回去表示有收到此位址，接著傳出記憶體位址上的data給master，那麼傳了8 bit後，master會ACK回去，以表示有收到資料，可以繼續傳，那麼slave端就會繼續傳，再過了8 bit，此時如果傳輸要結束的話則master不回ACK回去，而這個動作也稱non-ACK，以此告訴slave端這次的傳輸到此為止結束了，完成這次通訊。
 
 
 ## I2C如何選擇晶片的呢？
+
 在master要與BUS上的其中一個slave溝通時，會先將要溝通chip的address透過SDA傳輸到BUS上，此時如果address沒錯的話，那麼該slave會在下第八個SCL週期結束後把SDA拉下來，而master端會在SCL進入第九個週期前去讀取SDA是否為low，為low的話就會開始一連串handshake式的傳輸動作，若沒有拉為low(non-ACK)，則出現問題，可能slave根本不在BUS上或是slave端的address打錯了都有可能。
