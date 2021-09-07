@@ -19,3 +19,4 @@
 - [[Day15] 狀態機的撰寫](https://github.com/HUAIJIE0314/verilog-or-very-lag/blob/main/%5BDay15%5D%20%E7%8B%80%E6%85%8B%E6%A9%9F%E7%9A%84%E6%92%B0%E5%AF%AB.md)
 - [[Day16] TestBench的撰寫技巧](https://github.com/HUAIJIE0314/verilog-or-very-lag/blob/main/%5BDay16%5D%20TestBench%E7%9A%84%E6%92%B0%E5%AF%AB%E6%8A%80%E5%B7%A7.md)
 - [[Day17] Uart_TX 狀態機的實現](https://github.com/HUAIJIE0314/verilog-or-very-lag/blob/main/%5BDay17%5D%20Uart_TX%20%E7%8B%80%E6%85%8B%E6%A9%9F%E7%9A%84%E5%AF%A6%E7%8F%BE.md)
+- [[Day18] Uart_TX的實現](https://github.com/HUAIJIE0314/verilog-or-very-lag/blob/main/%5BDay18%5D%20Uart_TX%E7%9A%84%E5%AF%A6%E7%8F%BE.md)
