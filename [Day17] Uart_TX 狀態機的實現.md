@@ -44,12 +44,12 @@ localparam STOP  = 2'd3;
 - count(計數移位8次的計數器，由外模組來數所以這裡是輸入)
 
 **輸出：**
-
 - LDEN(LoadEnable，告訴外部模塊要Load資料)
 - SHEN(ShiftEnable，告訴外部模塊要移位)
 - rstcount(reset count，告訴外部模塊將計數器歸零)
 - countEN(CountEnable，告訴外部模塊將計數器往上計數)
 - busy(告訴外部模塊現在處於非IDLE狀態)
+- 
 ```verilog
 module Uart_TX(
   tick_uart, 
@@ -117,7 +117,7 @@ always@(posedge clk_50M or negedge rst_n)begin
         else               fstate <= START;
       end
       SHIFT:begin
-        if(tick_uart==1'b1&&count==3'd7)fstate <= STOP;
+        if(tick_uart==1'b1&&count==3'd6)fstate <= STOP;
         else                            fstate <= SHIFT;
       end
       STOP:begin
@@ -129,7 +129,7 @@ always@(posedge clk_50M or negedge rst_n)begin
   end
 end
 ```
-
+ 
 **輸出邏輯：**
 - 重置時
   - TX_D = 1(閒置狀態為1，故重置也是1)
@@ -180,8 +180,8 @@ always@(posedge clk_50M or negedge rst_n)begin
           TX_D     <= 1'b0;
           SHEN     <= 1'b1;
           LDEN     <= 1'b0;
-          if(count==3'd7)    rstcount <= 1'b1;
-          else if(count<3'd7)rstcount <= 1'b0;
+          if(count==3'd6)    rstcount <= 1'b1;
+          else if(count<3'd6)rstcount <= 1'b0;
           else               rstcount <= 1'b0;//prevent latch
           countEN  <= 1'b1;
         end
@@ -212,4 +212,6 @@ always@(posedge clk_50M or negedge rst_n)begin
 end
 endmodule
 ```
+`這邊要注意的是，雖然說要數到7才跳下一個狀態，以及要數到7 rstcount才=1，但是！，狀態機模組發送訊號到外模組，外模組要在下一個clk才會收到，因此如果打7的話，會讓SHEN延長至9個鮑率週期，導致輸出移位的次數錯誤`
+
 以上就是我整個Uart_TX狀態機設計的方法~~
