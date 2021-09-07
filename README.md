@@ -22,3 +22,4 @@
 - [【Day 18】 Uart_TX的實現](https://github.com/HUAIJIE0314/verilog-or-very-lag/blob/main/%5BDay18%5D%20Uart_TX%E7%9A%84%E5%AF%A6%E7%8F%BE.md)
 - [【Day 19】 SPI狀態機的實現](https://github.com/HUAIJIE0314/verilog-or-very-lag/blob/main/%5BDay19%5D%20SPI%E7%8B%80%E6%85%8B%E6%A9%9F%E7%9A%84%E5%AF%A6%E7%8F%BE.md)
 - [【Day 20】 SPI的實現](https://github.com/HUAIJIE0314/verilog-or-very-lag/blob/main/%5BDay20%5D%20SPI%E7%9A%84%E5%AF%A6%E7%8F%BE.md)
+- [【Day 21】 I2C的介紹](https://github.com/HUAIJIE0314/verilog-or-very-lag/blob/main/%5BDay21%5D%20I2C%E7%9A%84%E4%BB%8B%E7%B4%B9.md)
