@@ -138,5 +138,9 @@ regdata>>1 這邊右移是因為uart是LSB先傳。
 assign uart_txd = (SHEN)?(regdata[0]):(TX_D);
 ```
 
-**這樣我們就完成了Uart_TX的實作了唷~**
+來看看quartus的State Machine Viewer有沒有符合自己的預期
 
+![](https://i.imgur.com/Ud3uOgp.png)
+
+
+**到這邊這樣我們就完成了Uart_TX的實作了唷~**
