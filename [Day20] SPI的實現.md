@@ -136,7 +136,7 @@ always@(posedge clock_50M or negedge rst_n)begin
 end
 ```
 
-來解釋一下位甚麼這邊是48，因為我想讓其他動作有在SCLK負緣時\動作的效果，而SCLK會在cnt=49時發生負緣，所以如果我想讓其他事情也在cnt=49時動作，那麼我tick必須提前一個clk升起來才行，所以這裡才是48而非49。
+來解釋一下位甚麼這邊是48，因為我想讓其他動作有在SCLK負緣時動作的效果，而SCLK會在cnt=49時發生負緣，所以如果我想讓其他事情也在cnt=49時動作，那麼我tick必須提前一個clk升起來才行，所以這裡才是48而非49。
 
 **靠rstcount&countEN來控制counter**
 
