@@ -5,7 +5,7 @@
 
 **輸入：**
 - clk_50M
-- write_value
+- reset_n
 - write(外部給此模組的驅動信號(enable))
 - write_value(外部輸入給此模組要傳輸的8 bit 資料)
 
