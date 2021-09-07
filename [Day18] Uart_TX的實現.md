@@ -131,6 +131,7 @@ endmodule
 regdata>>1 這邊右移是因為uart是LSB先傳。
 
 **最後的最後**
+
 要在非SHIFT狀態時tick_uart切到狀態機的TX_D，而在SHIFT狀態時切回regdata的LSB。
 
 ```verilog
