@@ -49,7 +49,7 @@ localparam STOP  = 2'd3;
 - rstcount(reset count，告訴外部模塊將計數器歸零)
 - countEN(CountEnable，告訴外部模塊將計數器往上計數)
 - busy(告訴外部模塊現在處於非IDLE狀態)
-- 
+
 ```verilog
 module Uart_TX(
   tick_uart, 
