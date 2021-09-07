@@ -37,4 +37,4 @@ I2C，又稱I²C（Inter-Interated Circuit)，在I2C的通訊協定中，收發�
 
 ## I2C如何選擇晶片的呢？
 
-在master要與BUS上的其中一個slave溝通時，會先將要溝通chip的address透過SDA傳輸到BUS上，此時如果address沒錯的話，那麼該slave會在下第八個SCL週期結束後把SDA拉下來，而master端會在SCL進入第九個週期前去讀取SDA是否為low，為low的話就會開始一連串handshake式的傳輸動作，若沒有拉為low(non-ACK)，則出現問題，可能slave根本不在BUS上或是slave端的address打錯了都有可能。
+在master要與BUS上的其中一個slave溝通時，會先將要溝通chip的address透過SDA傳輸到BUS上，此時如果address沒錯的話，那麼該slave會在第八個SCL週期結束後把SDA拉下來，而master端會在SCL進入第九個週期前去讀取SDA是否為low，為low的話就會開始一連串handshake式的傳輸動作，若沒有拉為low(non-ACK)，則出現問題，可能slave根本不在BUS上或是slave端的address打錯了都有可能。
