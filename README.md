@@ -1,8 +1,8 @@
 # 2021 iThome 鐵人賽 自我挑戰組
 ## Verilog 寫不好就 very lag
 #### 從零開始學習Verilog
-## 文章
-- [[Day01] 概述](https://github.com/HUAIJIE0314/verilog-or-very-lag/blob/main/%5BDay01%5D%20%E6%A6%82%E8%BF%B0.md)
+## 文章 
+- [【Day 01】 概述](https://github.com/HUAIJIE0314/verilog-or-very-lag/blob/main/%5BDay01%5D%20%E6%A6%82%E8%BF%B0.md)
 - [[Day02] Verilog 基本簡介](https://github.com/HUAIJIE0314/verilog-or-very-lag/blob/main/%5BDay02%5D%20Verilog%20%E5%9F%BA%E6%9C%AC%E7%B0%A1%E4%BB%8B.md)
 - [[Day03] Verilog 資料型態(上)](https://github.com/HUAIJIE0314/verilog-or-very-lag/blob/main/%5BDay03%5D%20Verilog%20%E8%B3%87%E6%96%99%E5%9E%8B%E6%85%8B(%E4%B8%8A).md)
 - [[Day04] Verilog 資料型態(下)](https://github.com/HUAIJIE0314/verilog-or-very-lag/blob/main/%5BDay04%5D%20Verilog%20%E8%B3%87%E6%96%99%E5%9E%8B%E6%85%8B(%E4%B8%8B).md)
