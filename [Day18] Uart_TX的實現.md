@@ -142,5 +142,6 @@ assign uart_txd = (SHEN)?(regdata[0]):(TX_D);
 
 ![](https://i.imgur.com/Ud3uOgp.png)
 
+大家可以試著自己寫看看testbench來測試結果正不正確~~
 
-**到這邊這樣我們就完成了Uart_TX的實作了唷~**
+**那麼到這邊我們就完成了Uart_TX的實作了唷~**
