@@ -51,7 +51,7 @@ wire          finish;
 
 **宣告變數：**
 需要用到的變數有：
-- counter(計數用16個bit用，數0~49)
+- counter(計數16個bit用，數0~49)
 - cnt_SPI(計數用，要做tick_SPI)
 - regdata_i(load進來的資料先暫存在這裡)
 - regdata_o(用來存放miso的資料，並於傳輸結束後輸出)
