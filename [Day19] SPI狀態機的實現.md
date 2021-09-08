@@ -67,12 +67,7 @@ module SPI(
   SHEN, 
   LDEN
 );
-/*-----------parameter-----------*/
-parameter IDLE  = 2'd0;
-parameter START = 2'd1;
-parameter SHITF = 2'd2;
-parameter STOP  = 2'd3;
-/*-----------in/output-----------*/
+/*-----------ports declaration-----------*/
 input       clk_sys; 
 input       SCLK_temp; 
 input       rst_n;
