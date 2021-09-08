@@ -54,7 +54,7 @@ output       ACK1;
 output       ACK2;
 output       ACK3;
 output       tick_I2C_neg;
-output       ACK, 
+output       ACK; 
 output       rstACK;
 output       SCLK;
 output       ldnACK1;
@@ -64,7 +64,7 @@ reg          tick_I2C_neg;
 reg          ACK1;
 reg          ACK2;
 reg          ACK3;
-wire         ACK, 
+wire         ACK; 
 wire         rstACK;
 wire         SCLK;
 wire         ldnACK1;
