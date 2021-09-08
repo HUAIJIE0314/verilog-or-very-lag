@@ -35,7 +35,7 @@ wire        busy;
 ```
 **宣告變數：**
 需要用到的變數有：
-- counter(計數用8 bit用)
+- counter(計數8 bit用)
 - cnt_9600(計數用，要做tick_uart)
 - regdata(load進來的資料先暫存在這裡)
 - 與狀態機模組連接的變數
