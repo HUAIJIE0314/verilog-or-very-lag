@@ -250,6 +250,8 @@ endmodule
 
 而由此波形也可以看見SDA確實有在SCLK為LOW時才改變值。
 
+`註：虛線是因為pullup的關係，所以HIGH才變成虛線`
+
 ![](https://i.imgur.com/4UFhnlt.png)
 
 而這裡可以看到tick_I2C_neg(紅色那條)位於SDA的正中間，以此來取樣SDA信號可以確保值的正確性~~~~
