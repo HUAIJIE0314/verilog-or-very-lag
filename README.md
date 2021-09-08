@@ -24,3 +24,4 @@
 - [【Day 20】 SPI的實現](https://github.com/HUAIJIE0314/verilog-or-very-lag/blob/main/%5BDay20%5D%20SPI%E7%9A%84%E5%AF%A6%E7%8F%BE.md)
 - [【Day 21】 I2C的介紹](https://github.com/HUAIJIE0314/verilog-or-very-lag/blob/main/%5BDay21%5D%20I2C%E7%9A%84%E4%BB%8B%E7%B4%B9.md)
 - [【Day 22】 I2C Master狀態機的實現](https://github.com/HUAIJIE0314/verilog-or-very-lag/blob/main/%5BDay22%5D%20I2C%20Master%E7%8B%80%E6%85%8B%E6%A9%9F%E7%9A%84%E5%AF%A6%E7%8F%BE.md)
+- [【Day 23】 I2C Master(Write)的實現](https://github.com/HUAIJIE0314/verilog-or-very-lag/blob/main/%5BDay23%5D%20I2C%20Master(Write)%E7%9A%84%E5%AF%A6%E7%8F%BE.md)
