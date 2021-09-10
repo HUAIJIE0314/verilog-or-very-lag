@@ -27,3 +27,4 @@
 - [【Day 23】 I2C Master(Write)的實現](https://github.com/HUAIJIE0314/verilog-or-very-lag/blob/main/%5BDay23%5D%20I2C%20Master(Write)%E7%9A%84%E5%AF%A6%E7%8F%BE.md)
 - [【Day 24】 I2C Master的實現及驗證(最終章)](https://github.com/HUAIJIE0314/verilog-or-very-lag/blob/main/%5BDay24%5D%20I2C%20Master%E7%9A%84%E5%AF%A6%E7%8F%BE%E5%8F%8A%E9%A9%97%E8%AD%89(%E6%9C%80%E7%B5%82%E7%AB%A0).md)
 - [【Day 25】 One-Wire protocol](https://github.com/HUAIJIE0314/verilog-or-very-lag/blob/main/%5BDay25%5D%20One-Wire%20protocol.md)
+- [【Day 26】 快速乘法器的實作(Booth演算法)](https://github.com/HUAIJIE0314/verilog-or-very-lag/blob/main/%5BDay26%5D%20%E5%BF%AB%E9%80%9F%E4%B9%98%E6%B3%95%E5%99%A8%E7%9A%84%E5%AF%A6%E4%BD%9C(Booth%E6%BC%94%E7%AE%97%E6%B3%95).md)
