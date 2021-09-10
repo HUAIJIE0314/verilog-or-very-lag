@@ -252,7 +252,7 @@ always@(posedge clkSys or negedge rst_n)begin
 end
 ```
 
-在SDA剛下降時去檢查剛剛在SDA為HIGH時維持了多少時間，如果大於70us則將1左移移入databuf，反之則移入"0"。
+在SDA剛下降時去檢查剛剛在SDA為HIGH時維持了多少時間，如果大於70us則將"1"左移移入databuf，反之則移入"0"。
 
 **檢查較驗碼**
 
