@@ -60,7 +60,7 @@ input        clkSys;
 input        en;
 input        rst_n;
 input  [7:0] dividend;
-input  [5:0] ;
+input  [5:0] divisor;
 output [5:0] r_out;
 output [7:0] q_out;
 output       done;
