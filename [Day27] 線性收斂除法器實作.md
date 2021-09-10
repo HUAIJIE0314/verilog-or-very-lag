@@ -227,5 +227,6 @@ endmodule
 
 **Wave**
 
+![](https://i.imgur.com/Iy7UeHC.png)
 
 商與餘的結果也都有符合預期，那麼今天的教學也到這邊嘍~
