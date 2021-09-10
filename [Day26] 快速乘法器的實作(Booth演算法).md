@@ -87,8 +87,8 @@ always@(posedge clkSys or negedge rst_n)begin
   if(!rst_n)fstate <= IDLE;
   else begin
     case(fstate)
-	   IDLE:begin
-		  if(en)fstate <= CAL;
+      IDLE:begin
+        if(en)fstate <= CAL;
         else  fstate <= IDLE;
       end
       CAL:begin
