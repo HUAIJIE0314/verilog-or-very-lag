@@ -31,3 +31,4 @@
 - [【Day 27】 線性收斂除法器實作](https://github.com/HUAIJIE0314/verilog-or-very-lag/blob/main/%5BDay27%5D%20%E7%B7%9A%E6%80%A7%E6%94%B6%E6%96%82%E9%99%A4%E6%B3%95%E5%99%A8%E5%AF%A6%E4%BD%9C.md)
 - [【Day 28】 2次收斂除法器實作](https://github.com/HUAIJIE0314/verilog-or-very-lag/blob/main/%5BDay28%5D%202%E6%AC%A1%E6%94%B6%E6%96%82%E9%99%A4%E6%B3%95%E5%99%A8%E5%AF%A6%E4%BD%9C.md)
 - [【Day 29】 Cordic演算法的實現](https://github.com/HUAIJIE0314/verilog-or-very-lag/blob/main/%5BDay29%5D%20Cordic%E6%BC%94%E7%AE%97%E6%B3%95%E7%9A%84%E5%AF%A6%E7%8F%BE.md)
+- [【Day 30】 Pipelined加法器](https://github.com/HUAIJIE0314/verilog-or-very-lag/blob/main/%5BDay30%5D%20Pipelined%E5%8A%A0%E6%B3%95%E5%99%A8.md)
